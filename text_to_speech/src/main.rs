@@ -7,4 +7,14 @@ fn main() {
         tld: "com",
     };
     narrator.speak("Hello, World!");
+
+    let mut shopping_list = Vec::new();
+    shopping_list.push("Apples");
+    shopping_list.push("Bananas");
+    shopping_list.push("Chocolate");
+
+    for item in shopping_list.iter(){
+        narrator.speak(item);
+    }
+
 }
